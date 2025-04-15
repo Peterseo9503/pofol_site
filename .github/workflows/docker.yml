@@ -38,4 +38,4 @@ jobs:
           script: |
             cd /home/ubuntu/frontend
             chmod +x pofol-deploy.sh
-            ./deploy.sh
+            ./pofol-deploy.sh
