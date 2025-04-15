@@ -94,6 +94,22 @@
 
             "site_link": "http://kkms4001.iptime.org:21119/",
             "pdf_link": "http://kkms4001.iptime.org/~c20st13/portfolio/networkDashboard/NetworkDashboard_team3.pdf"
+        },
+        {
+            "id": "4",
+            "css": "kiosk",
+            "title": "사랑은 열린문",
+            "duration": "2025.04(2인 팀프로젝트)",
+            "explain_title": "AI 연애 상담 웹서비스",
+            "explain_detail": [
+                "회원가입 및 로그인 기능 (bcrypt + JWT를 이용한 사용자 인증)",
+                "REST API를 이용한 사용자의 질문과 AI의 답변을 저장, 조회, 삭제 가능",
+                "GitHub Actions + Docker + EC2 기반 자동화 파이프라인 구성"
+            ],
+            "skills": ["React","node","MySQL", "Docker" ,"Git"],
+
+            "site_link": "http://sdhportfolio.kro.kr:3000/",
+            "git_link": "https://github.com/LoveIsOpenDoor/Back-End"
         }
         
     ]

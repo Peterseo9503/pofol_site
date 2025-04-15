@@ -13,7 +13,7 @@ const Projects = forwardRef((props, ref) => {
 
     const displayItems = (arrayData) => {
         return arrayData.map(info => {
-            const { css, title, duration, explain_title, explain_detail, skills, site_link, pdf_link } = info;
+            const { css, title, duration, explain_title, explain_detail, skills, site_link, pdf_link, git_link } = info;
             return <div className={styles.project_item} key={css}>
                 <h4 className={`${styles.project_title} ${styles[css]}`} >{title}</h4>
                 <div className={styles.project_duration}>{duration}</div>
@@ -32,23 +32,19 @@ const Projects = forwardRef((props, ref) => {
                     <button onClick={() => {
                         window.open(site_link, '_blank');
                     }}>💻GO TO SITE</button>
-                    <button onClick={() => {
+                    {pdf_link ? <button onClick={() => {
                         window.open(pdf_link, '_blank');
-                    }}>📜PDF</button>
+                    }}>📜PDF</button> 
+                    : ""}
+                    {git_link ? <button onClick={() => {
+                        window.open(git_link, '_blank');
+                    }}>🐈‍⬛GIT</button> 
+                    : ""}
                 </div>
             </div>
         })
     }
 
-    // const changeButtonState = () => {
-    //     if (buttonState === "latest") {
-    //         setButtonState("past");
-    //         setPersonalCopiedData(personalCopiedData.reverse());
-    //     } else if (buttonState === "past") {
-    //         setButtonState("latest");
-    //         setPersonalCopiedData(personalCopiedData.reverse());
-    //     }
-    // }
     const changeButtonState = (state,flag) => {
         switch (flag){
             case "personal":
