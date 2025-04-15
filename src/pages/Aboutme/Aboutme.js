@@ -39,7 +39,7 @@ const Aboutme = forwardRef((props, ref) => {
                         <img src={`/assets/images/${info.imgName}.png`} alt="name" />
                         <div className={styles.item_container}>
                             <div className={styles.item_info_container}>
-                                {/* <div className={styles.title_info}>{info.title}</div> */}
+                                <div className={styles.title_info}>{info.title}</div>
                                 {getContent(info, info.imgName)}
                             </div>
                         </div>
