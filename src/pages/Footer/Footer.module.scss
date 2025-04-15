@@ -1,0 +1,12 @@
+@import '../../styles//main.scss';
+.footer{
+    height:120px;
+    background-color: #222222;
+    @include thinFont;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    font-weight:400;
+}

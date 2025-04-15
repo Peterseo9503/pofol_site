@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "imgName": "sqld.png",
+            "title": "SQLD",
+            "from":"한국데이터베이스진흥원",
+            "duration": "2024.12",
+            "pdf":"http://kkms4001.iptime.org/~c20st13/portfolio/Certifications/SQLD.pdf",
+            "imgPath":"sqld.png"
+        },
+        {
+            "imgName": "korea.png",
+            "title": "정보처리기사",
+            "from":"한국산업인력공단",
+            "duration": "2021.11",
+            "pdf":"http://kkms4001.iptime.org/~c20st13/portfolio/Certifications/information_processing.pdf",
+            "imgPath":"information_processing.png"
+
+        },
+        {
+            "imgName": "korea.png",
+            "title": "정보처리산업기사",
+            "from":"한국산업인력공단",
+            "duration": "2017.05",
+            "pdf":"http://kkms4001.iptime.org/~c20st13/portfolio/Certifications/information_processing.pdf",
+            "imgPath":"information_processing.png"
+        },
+        {
+            "imgName": "ccna.png",
+            "from":"Cisco",
+            "title": "CCNA",
+            "duration": "2016.12",
+            "pdf":"http://kkms4001.iptime.org/~c20st13/portfolio/Certifications/CCNA.png",
+            "imgPath":"CCNA.png"
+        }
+    ]
+}

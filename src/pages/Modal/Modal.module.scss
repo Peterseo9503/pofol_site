@@ -1,0 +1,42 @@
+@import "../../styles/main.scss";
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw; // 모바일 대응
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}

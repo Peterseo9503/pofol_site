@@ -1,0 +1,75 @@
+@import '../../styles/main.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    @include boxPadding;
+
+    h3 {
+        @include subTitle;
+
+        img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    }
+
+    .about_moto {
+        @include aboutMoto;
+    }
+
+    .about_container {
+        display: grid;
+        max-width: 800px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 20px;
+        place-items: center;
+        @include thinFont;
+
+
+        .about_item_conatiner {
+            width: 200px;
+            display: flex;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .item_info_container {
+                margin-left: 20px;
+
+                .title_info {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+
+                .content_info {
+                    font-size: 14px;
+                    font-weight: 300;
+                    white-space: pre-line;
+                }
+            }
+        }
+    }
+}
+
+//반응형
+@media (max-width:768px) {
+    .about_container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width:480px) {
+    .about_container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

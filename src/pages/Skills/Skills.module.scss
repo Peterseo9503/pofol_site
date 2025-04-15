@@ -1,0 +1,153 @@
+@import "../../styles/main.scss";
+
+.container {
+    box-sizing: border-box;
+    @include boxPadding;
+    width: 100%;
+    // height: 560px;
+    background-color: $skillsColor;
+    // background-color: #b6d3a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        @include subTitle;
+    }
+    .about_moto{
+        @include aboutMoto;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .skills_total_container {
+        box-sizing: border-box;
+        // width:100%;
+        max-width:800px;
+        width: 100%;
+        background-color: $weakYellowColor;
+        border-radius: 20px;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+
+        .skills_container {
+            color: $black;
+            display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 150px auto;
+            box-sizing: border-box;
+            gap: 0px;
+            padding: 20px;
+            width: 100%;
+            // justify-content: start;
+            place-items: start;
+
+            .title_skills {
+                display: flex;
+                align-items: center;
+                @include thinFont;
+                font-weight: 800;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+
+            .content_skills {
+                @include thinFont;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+
+                // background-color: $weakYellowColor;
+                .item_skills {
+                    // background-color: lightblue;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    margin: 1px 5px;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:480px) {
+    .skills_container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .skills_container *{
+        margin:2px !important;
+    }
+}
+
+///////
+.TypeScript {
+    color: white;
+    background-color: #2f74c0;
+}
+
+.JavaScript {
+    color: black;
+    background-color: #f7df1e;
+}
+
+.Python {
+    color: white;
+    background-color: #3776AB;
+}
+
+.Java {
+    color: white;
+    background-color: #E76F00;
+}
+
+.React {
+    color: black;
+    background-color: #61DAFB;
+}
+
+.Sass {
+    color: white;
+    background-color: #CD6799;
+}
+
+.Pug {
+    color: white;
+    background-color: #A86454;
+}
+
+.Express {
+    color: white;
+    background-color: #444444;
+}
+
+.Django {
+    color: white;
+    background-color: #092E20;
+}
+
+.MySQL {
+    color: white;
+    background-color: #00758F;
+}
+
+.AWS {
+    color: black;
+    background-color: #FF9900;
+}
+
+.Docker {
+    color: white;
+    background-color: #2496ED;
+}
+
+.Spring{
+    color:white;
+    background-color: green;
+}

@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "imgName": "name",
+            "title": "이름",
+            "content": "서동현",
+            "link" : ""
+        },
+        {
+            "imgName": "birth",
+            "title": "생년월일",
+            "content": "95.03.28",
+            "link" : ""
+        },
+        {
+            "imgName": "location",
+            "title": "위치",
+            "content": "안산시 단원구",
+            "link" : ""
+        },
+        {
+            "imgName": "tel",
+            "title": "연락처",
+            "content": "010-5699-3299",
+            "link" : ""
+            
+        },
+        {
+            "imgName": "kakao",
+            "title": "이메일",
+            "content": "OpenChat",
+            "link" : "https://open.kakao.com/o/sMoWyGfh"
+        },
+        {
+            "imgName": "pen",
+            "title": "학력",
+            "content": "영진전문대학교\n(컴퓨터정보계열)",
+            "link" : ""
+        }
+    ]
+}

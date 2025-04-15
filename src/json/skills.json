@@ -1,0 +1,8 @@
+{
+    "data":[
+        { "imgName":"language","title":"Language","content":["JavaScript","TypeScript","Python"] },
+        { "imgName":"frontend","title":"Front-end","content":["React","Sass"] },
+        { "imgName":"backend","title":"Back-end","content":["Express","Django","MySQL"] },
+        { "imgName":"devops","title":"DevOps","content":["AWS","Docker"] }
+    ]
+}

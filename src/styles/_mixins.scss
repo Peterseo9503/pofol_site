@@ -1,0 +1,49 @@
+@mixin thinFont {
+    font-family: "Noto Sans KR", serif;
+    font-weight: 500;
+}
+
+@mixin thickFont {
+    font-family: "Gasoek One", serif;
+    font-weight: 100;
+    font-style: normal;
+    // -webkit-text-stroke: 0.001rem black; /* 텍스트에 2px 두께의 검은색 보더 적용 */
+    text-align: center;
+}
+@mixin boxPadding{
+    padding:64px 24px;
+}
+@mixin rmButtonEffect {
+    background: none;
+    /* 배경 제거 */
+    border: none;
+    /* 테두리 제거 */
+    // padding: 0;            /* 패딩 제거 */
+    // margin: 0;             /* 마진 제거 */
+    // font: inherit;         /* 상속받은 폰트로 설정 */
+    outline: none;
+    /* 외곽선 제거 (클릭 시 나타나는 테두리) */
+    cursor: pointer;
+    /* 마우스를 올렸을 때 커서 모양을 '포인터'로 변경 */
+}
+
+@mixin subTitle {
+    @include thickFont;
+    color:#333333;
+    font-weight: 0;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+}
+
+@mixin aboutMoto($color:$black) {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: $color;
+    padding-bottom: 20px;
+    text-align:center;
+}

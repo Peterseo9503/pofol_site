@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "imgName": "base2.png",
+            "title": "BASE2",
+            "duration": "2023.06 - 2024.02",
+            "responsibility": "General Duties Assistant",
+            "tasks":["Packaging","Documentation","Assembly Work"
+            ]
+        },
+        {
+            "imgName": "dgbupay.svg",
+            "title": "DGB유페이",
+            "duration": "2018.02 - 2022.02",
+            "responsibility": "데이터 관리 및 네트워크 운영 지원",
+            "tasks":[
+                "교통카드 BL/PL관리 및 원장 변경 처리",
+                "PL/SQL을 활용한 월별 데이터 처리 및 정산 데이터 검증",
+                "관공서 제공용 정산 데이터 생성 및 검증",
+                "네트워크 및 보안 프로그램 운영 보조"
+            ]
+        }
+    ]
+}
