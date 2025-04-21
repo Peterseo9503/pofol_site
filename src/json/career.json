@@ -11,6 +11,18 @@
                 "관공서 제공용 정산 데이터 생성 및 검증",
                 "네트워크 및 보안 프로그램 운영 보조"
             ]
+        },
+        {
+            "imgName": "카택스.png",
+            "title": "카택스",
+            "duration": "2025.04 - ",
+            "responsibility": "",
+            "tasks":[
+                "NextJs",
+                "AWS Lambda",
+                "TailWind",
+                "isms"
+            ]
         }
     ]
 }
