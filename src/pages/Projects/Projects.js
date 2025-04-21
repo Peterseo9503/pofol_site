@@ -101,6 +101,7 @@ const Projects = forwardRef((props, ref) => {
             </div>
             <div className={styles.project_container}>
                 {displayItems(teamCopiedData)}
+                
             </div>
         </div>
     </>
