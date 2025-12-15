@@ -4,7 +4,7 @@ import styles from "./Projects.module.scss";
 import projectInfo from '../../json/project.json';
 
 const Projects = forwardRef((props, ref) => {
-    const { personal_project ,team_project } = projectInfo;
+    const { personal_project, team_project } = projectInfo;
     const [personalCopiedData, setPersonalCopiedData] = useState(JSON.parse(JSON.stringify(personal_project)));
     const [teamCopiedData, setTeamCopiedData] = useState(JSON.parse(JSON.stringify(team_project)));
 
@@ -29,31 +29,28 @@ const Projects = forwardRef((props, ref) => {
                     </div>
                 </div>
                 <div className={styles.button_area}>
-                    <button onClick={() => {
-                        window.open(site_link, '_blank');
-                    }}>💻GO TO SITE</button>
                     {pdf_link ? <button onClick={() => {
                         window.open(pdf_link, '_blank');
-                    }}>📜PDF</button> 
-                    : ""}
+                    }}>📜PDF</button>
+                        : ""}
                     {git_link ? <button onClick={() => {
                         window.open(git_link, '_blank');
-                    }}>🐈‍⬛GIT</button> 
-                    : ""}
+                    }}>🐈‍⬛GIT</button>
+                        : ""}
                 </div>
             </div>
         })
     }
 
-    const changeButtonState = (state,flag) => {
-        switch (flag){
+    const changeButtonState = (state, flag) => {
+        switch (flag) {
             case "personal":
                 if (state === "latest") {
                     setPersonalOrderBtn("past");
-                    setPersonalCopiedData( personalCopiedData.reverse() );
+                    setPersonalCopiedData(personalCopiedData.reverse());
                 } else if (state === "past") {
                     setPersonalOrderBtn("latest");
-                    setPersonalCopiedData( personalCopiedData.reverse() );
+                    setPersonalCopiedData(personalCopiedData.reverse());
                 }
                 break;
             case "team":
@@ -65,8 +62,8 @@ const Projects = forwardRef((props, ref) => {
                     setTeamCopiedData(teamCopiedData.reverse());
                 }
                 break;
-                default:
-                    console.log("Error changeButtonEvent");
+            default:
+                console.log("Error changeButtonEvent");
         }
 
     }
@@ -101,7 +98,7 @@ const Projects = forwardRef((props, ref) => {
             </div>
             <div className={styles.project_container}>
                 {displayItems(teamCopiedData)}
-                
+
             </div>
         </div>
     </>
