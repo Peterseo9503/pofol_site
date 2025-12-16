@@ -7,7 +7,7 @@ IMAGE_NAME="peterseo9503/personal_blog:latest"
 CONTAINER_NAME="personal_blog_container" 
 # 컨테이너 내부 포트와 EC2 호스트 외부 포트
 HOST_PORT="80" 
-CONTAINER_PORT="3000"
+CONTAINER_PORT="21120"
 # -----------------
 
 echo "========================================"
