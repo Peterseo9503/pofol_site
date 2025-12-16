@@ -29,6 +29,18 @@ jobs:
           push: true
           tags: peterseo9503/personal_blog:latest
 
+          # --- 파일 전송 단계 추가 ---
+      - name: Deploy 파일 EC2에 복사 (SCP 사용)
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_KEY }}
+          # EC2에 생성할 디렉토리 (없으면 자동으로 생성됨)
+          target: /home/ubuntu/frontend/ 
+          # GitHub Actions Runner에서 EC2로 전송할 파일 지정
+          source: "./pofol-deploy.sh"
+          
       - name: EC2에 자동접속 후 pofol-deploy.sh 실행
         uses: appleboy/ssh-action@v1.0.0
         with:
