@@ -12,14 +12,15 @@
                 "네트워크 및 보안 프로그램 운영 보조"
             ]
         },
-         {
+        {
             "imgName": "dgbupay.svg",
             "title": "CarTax",
             "duration": "2025.04 - 2026.",
             "responsibility": "웹 프로그래밍 풀스택 개발자",
             "tasks": [
                 "PHP레거시 코드를 NEXT.JS 환경으로 마이그레이션",
-                "기존 NEXT.JS 코드 리팩토링"
+                "기존 NEXT.JS 코드 리팩토링",
+                "운영중인 SaaS서비스 오류 트러블 슈팅 및 최적화"
             ]
         }
     ]
