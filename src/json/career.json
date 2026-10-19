@@ -1,9 +1,10 @@
 {
     "data": [
         {
-            "imgName": "dgbupay.svg",
-            "title": "DGB유페이",
-            "duration": "2018.02 - 2022.02",
+            "imgName": "imupay.svg",
+            "title": "IM유페이",
+            "department": "",
+            "duration": "2018.02 ~ 2022.02",
             "responsibility": "데이터 관리 및 네트워크 운영 지원",
             "tasks": [
                 "교통카드 BL/PL관리 및 원장 변경 처리",
@@ -13,14 +14,28 @@
             ]
         },
         {
-            "imgName": "dgbupay.svg",
-            "title": "CarTax",
-            "duration": "2025.04 - 2026.",
+            "imgName": "cartax.png",
+            "title": "카택스",
+            "department": "",
+            "duration": "2025.04 ~ 2026.02",
             "responsibility": "웹 프로그래밍 풀스택 개발자",
+            "certLink": "https://app.notion.com/p/_-3cf122dcda5180b2b0f7e99ed4737af7?source=copy_link",
             "tasks": [
-                "PHP레거시 코드를 NEXT.JS 환경으로 마이그레이션",
-                "기존 NEXT.JS 코드 리팩토링",
-                "운영중인 SaaS서비스 오류 트러블 슈팅 및 최적화"
+                "PHP 레거시 코드를 Next.js 환경으로 마이그레이션",
+                "기존 Next.js 코드 리팩토링",
+                "운영 중인 SaaS 서비스 오류 트러블슈팅 및 최적화"
+            ]
+        },
+        {
+            "imgName": "axt_icon.png",
+            "duration": "2026.03 - 2026.07",
+            "title": "㈜아진엑스텍",
+            "responsibility": "전산 및 보안프로그램 관리",
+            "certLink": "https://app.notion.com/p/_-3cf122dcda5180b2b0f7e99ed4737af7?source=copy_link",
+            "tasks": [
+                "영림원 ERP 도입 프로젝트 참여 및 커스텀 페이지 개발",
+                "MS-SQL, 테이블 설계, SP 튜닝",
+                "DLP, DRM, NAC, VPN 유지보수 업체 관리 및 운영"
             ]
         }
     ]
