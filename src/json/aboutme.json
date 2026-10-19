@@ -4,38 +4,37 @@
             "imgName": "name",
             "title": "이름",
             "content": "서동현",
-            "link" : ""
+            "link": ""
         },
         {
             "imgName": "birth",
             "title": "생년월일",
             "content": "95.03.28",
-            "link" : ""
+            "link": ""
         },
         {
             "imgName": "location",
             "title": "위치",
-            "content": "안산시 단원구",
-            "link" : ""
+            "content": "대구광역시 달서구",
+            "link": ""
         },
         {
             "imgName": "tel",
             "title": "연락처",
             "content": "010-5699-3299",
-            "link" : ""
-            
+            "link": ""
         },
         {
             "imgName": "kakao",
             "title": "카카오톡",
             "content": "OpenChat",
-            "link" : "https://open.kakao.com/o/sMoWyGfh"
+            "link": "https://open.kakao.com/o/sUk8u7Si"
         },
         {
             "imgName": "pen",
             "title": "학력",
-            "content": "영진전문대학교\n(컴퓨터정보계열)",
-            "link" : ""
+            "content": "국가평생교육진흥원\n(컴퓨터정보계열)",
+            "link": ""
         }
     ]
 }

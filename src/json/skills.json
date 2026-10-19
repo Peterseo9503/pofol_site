@@ -1,8 +1,30 @@
 {
-    "data":[
-        { "imgName":"language","title":"Language","content":["JavaScript","TypeScript","Java"] },
-        { "imgName":"frontend","title":"Front-end","content":["React","Sass"] },
-        { "imgName":"backend","title":"Back-end","content":["Express","Django","MySQL","SpringBoot"] },
-        { "imgName":"devops","title":"DevOps","content":["AWS","Docker"] }
+    "domains": [
+        {
+            "id": "web",
+            "label": "Web Development",
+            "skills": [
+                { "imgName": "language.svg",  "title": "Language",  "content": ["JavaScript", "TypeScript", "Java"] },
+                { "imgName": "frontend.svg",  "title": "Front-end", "content": ["React", "Sass"] },
+                { "imgName": "backend.svg",   "title": "Back-end",  "content": ["Express", "Django", "MySQL", "SpringBoot"] },
+                { "imgName": "devops.svg",    "title": "DevOps",    "content": ["AWS", "Docker"] }
+            ]
+        },
+        {
+            "id": "security",
+            "label": "Security Operations",
+            "skills": [
+                { "imgName": "network_security.png", "title": "Network Security", "content": ["VPN", "NAC"] },
+                { "imgName": "data_security.png",    "title": "Data Security",    "content": ["DLP", "DRM"] }
+            ]
+        },
+        {
+            "id": "erp",
+            "label": "ERP Development",
+            "skills": [
+                { "imgName": "erp_system.png", "title": "ERP System",    "content": ["영림원 ERP"] },
+                { "imgName": "backend.svg",    "title": "DB / Procedure", "content": ["MS-SQL", "Stored Procedure"] }
+            ]
+        }
     ]
 }

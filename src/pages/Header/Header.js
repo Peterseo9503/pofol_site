@@ -39,7 +39,7 @@ const Header = forwardRef(({ aboutmeRef }, ref) => {
             <div className={styles.textConatiner}>
                 <div className={styles.bottomP}>
                     <p>안녕하세요.<br />
-                        열정과 경험을 겸비한 개발자<br />
+                        열정을 가지고 도전을 두려워 하지 않는 IT 전문가<br />
                         서동현 입니다.</p>
                 </div>
                 <div className={styles.topP}>
