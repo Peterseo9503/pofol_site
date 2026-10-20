@@ -1,7 +1,7 @@
-import { forwardRef, useState } from 'react'
+import { forwardRef, useState } from 'react';
 import styles from "./Projects.module.scss";
-
 import projectInfo from '../../json/project.json';
+import { trackClick } from '../../services/tracker';
 
 const Projects = forwardRef((props, ref) => {
     const { personal_project, team_project } = projectInfo;
@@ -29,18 +29,25 @@ const Projects = forwardRef((props, ref) => {
                     </div>
                 </div>
                 <div className={styles.button_area}>
+                    {site_link ? <button onClick={() => {
+                        window.open(site_link, '_blank');
+                        trackClick('Project', 'Site Link', title);
+                    }}>🌐SITE</button>
+                        : ""}
                     {pdf_link ? <button onClick={() => {
                         window.open(pdf_link, '_blank');
+                        trackClick('Project', 'PDF View', title);
                     }}>📜PDF</button>
                         : ""}
                     {git_link ? <button onClick={() => {
                         window.open(git_link, '_blank');
+                        trackClick('Project', 'GitHub Link', title);
                     }}>🐈‍⬛GIT</button>
                         : ""}
                 </div>
             </div>
-        })
-    }
+        });
+    };
 
     const changeButtonState = (state, flag) => {
         switch (flag) {
@@ -48,25 +55,28 @@ const Projects = forwardRef((props, ref) => {
                 if (state === "latest") {
                     setPersonalOrderBtn("past");
                     setPersonalCopiedData(personalCopiedData.reverse());
+                    trackClick('Interaction', 'Sort Projects', 'Personal (과거순)');
                 } else if (state === "past") {
                     setPersonalOrderBtn("latest");
                     setPersonalCopiedData(personalCopiedData.reverse());
+                    trackClick('Interaction', 'Sort Projects', 'Personal (최신순)');
                 }
                 break;
             case "team":
                 if (state === "latest") {
                     setTeamOrderBtn("past");
                     setTeamCopiedData(teamCopiedData.reverse());
+                    trackClick('Interaction', 'Sort Projects', 'Team (과거순)');
                 } else if (state === "past") {
                     setTeamOrderBtn("latest");
                     setTeamCopiedData(teamCopiedData.reverse());
+                    trackClick('Interaction', 'Sort Projects', 'Team (최신순)');
                 }
                 break;
             default:
                 console.log("Error changeButtonEvent");
         }
-
-    }
+    };
 
     return <>
         <div ref={ref} className={styles.container}>
@@ -98,10 +108,9 @@ const Projects = forwardRef((props, ref) => {
             </div>
             <div className={styles.project_container}>
                 {displayItems(teamCopiedData)}
-
             </div>
         </div>
-    </>
+    </>;
 });
 
 export default Projects;

@@ -2,14 +2,15 @@ import { useState, useEffect, useRef } from 'react';
 ////////////////////////////////////////////////////////
 import FixedHeader from "./pages/FixedHeader/FixedHeader";
 import Header from "./pages/Header/Header";
-import Aboutme from "./pages/Aboutme/Aboutme"
-import Skills from "./pages/Skills/Skills"
+import Aboutme from "./pages/Aboutme/Aboutme";
+import Skills from "./pages/Skills/Skills";
 import Certification from './pages/Certification/Certification';
 import Projects from "./pages/Projects/Projects";
 import Career from "./pages/Career/Career";
-import Footer from "./pages/Footer/Footer"
+import Footer from "./pages/Footer/Footer";
 import ScrollTopBtn from './components/ScrollTopBtn';
 import Preloader from './components/Preloader';
+import { trackVisitor } from './services/tracker';
 ////////////////////////////////////////////////////////
 function App() {
 
@@ -21,6 +22,11 @@ function App() {
   const careerRef = useRef(null);
 
   const [isLoading, setIsLoading] = useState(true);
+
+  // 방문자 접속 로깅 (IP, 지역, 디바이스, 통계)
+  useEffect(() => {
+    trackVisitor();
+  }, []);
 
   useEffect(() => {
     async function waitForFonts() {
@@ -38,12 +44,6 @@ function App() {
 
     waitForFonts();
   }, []);
-
-  // useEffect( ()=>{
-  //   document.fonts.ready.then( ()=>{
-  //     setIsLoading(false);
-  //   } );
-  // } ,[]);
 
   return (
     isLoading ? <Preloader /> :
